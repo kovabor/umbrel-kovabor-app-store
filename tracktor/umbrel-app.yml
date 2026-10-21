@@ -1,24 +1,18 @@
 manifestVersion: 1
-id: kovabor-tracktor
+id: mystore-tracktor
 name: Tracktor
-tagline: Track your projects and tasks
-icon: https://svgur.com/i/mvA.svg
-category: Productivity
-version: "1.0.0"
-port: 3000
+tagline: Web-based mileage and vehicle expense tracking
+category: automation
+version: "latest"
+port: 8080
 description: >-
-  Tracktor project and task tracking application.
-
-developer: javedh-dev
-website: https://github.com/javedh-dev/tracktor
-submitter: kovabor
-submission: https://github.com/javedh-dev/tracktor
-repo: https://github.com/javedh-dev/tracktor
-support: https://github.com/javedh-dev/tracktor/issues
+  Tracktor is a self-hosted web application for tracking mileage, fuel consumption, 
+  maintenance logs, and ongoing vehicle expenses.
+developer: Tracktor
+website: https://github.com/samuel-ping/tracktor
+repo: https://github.com/samuel-ping/tracktor
+support: https://github.com/samuel-ping/tracktor/issues
 gallery: []
-releaseNotes: >-
-  Initial community app release.
-dependencies: []
 path: ""
 defaultUsername: ""
-defaultPassword: ""
+deterministicPassword: false
