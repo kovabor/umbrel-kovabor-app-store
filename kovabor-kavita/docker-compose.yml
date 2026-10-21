@@ -10,21 +10,10 @@ services:
     image: lscr.io/linuxserver/kavita:latest
     container_name: kovabor-kavita_web_1
     restart: unless-stopped
-    entrypoint: "/init"
-    ports:
-      - "8420:5000"
     volumes:
       - ${APP_DATA_DIR}/config:/config
+      - ${APP_DATA_DIR}/data:/data
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Budapest
-      - HOME=/config
-      - LANGUAGE=en_US.UTF-8
-      - LANG=en_US.UTF-8
-      - TERM=xterm
-      - S6_CMD_WAIT_FOR_SERVICES_MAXTIME=0
-      - S6_VERBOSITY=1
-      - S6_STAGE2_HOOK=/docker-mods
-      - VIRTUAL_ENV=/lsiopy
-      - LSIO_FIRST_PARTY=true
