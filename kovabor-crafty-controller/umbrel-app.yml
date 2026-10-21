@@ -5,7 +5,7 @@ tagline: Minecraft szerverkezelő felület gyerekeknek
 icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/1d7afe17024d1a71eba38d3fcf1c96658ce03935/kovabor-crafty-controller/crafty-controller.svg
 category: games
 version: "4.4.4"
-port: 8443
+port: 8080
 description: >-
   A Crafty Controller egy webes felületű Minecraft szervermenedzsment eszköz.
   Lehetővé teszi különféle Minecraft szerverek (Vanilla, Paper, Fabric, Forge)
