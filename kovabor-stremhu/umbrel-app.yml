@@ -4,7 +4,7 @@ name: StremHU
 tagline: Self-hosted torrent streaming szerver
 category: Entertainment
 version: "0.23.4"
-port: 3100
+port: 7070
 description: >-
   Self-hosted torrent streaming szerver Stremio és más kliensekhez, 
   beépített támogatással a magyar torrentoldalakhoz.
