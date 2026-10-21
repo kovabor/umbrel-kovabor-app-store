@@ -2,7 +2,7 @@ manifestVersion: 1
 id: crafty-controller
 name: Crafty Controller
 tagline: Minecraft szerverkezelő felület gyerekeknek és családoknak
-icon: https://raw.githubusercontent.com/arcanetech/crafty-web/master/public/img/crafty_logo.png
+icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/1d7afe17024d1a71eba38d3fcf1c96658ce03935/kovabor-crafty-controller/crafty-controller.svg
 category: Games
 version: 4.4.4
 port: 8443
