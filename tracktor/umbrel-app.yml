@@ -4,7 +4,7 @@ name: Tracktor
 tagline: Web-based mileage and vehicle expense tracking
 category: automation
 version: "latest"
-port: 8080
+port: 3339
 description: >-
   Tracktor is a self-hosted web application for tracking mileage, fuel consumption, 
   maintenance logs, and ongoing vehicle expenses.
