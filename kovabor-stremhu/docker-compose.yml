@@ -2,14 +2,9 @@ version: "3.7"
 
 services:
   app_proxy:
-    image: getumbrel/app-proxy:latest
-    container_name: kovabor-stremhu_app_proxy_1
     environment:
       APP_HOST: kovabor-stremhu_web_1
       APP_PORT: 7070
-    ports:
-      - "${EXPOSED_PORT}:7070"
-    restart: on-failure
 
   web:
     image: s4pp1/stremhu-source:latest
