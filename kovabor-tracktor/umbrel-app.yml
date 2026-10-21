@@ -2,6 +2,7 @@ manifestVersion: 1
 id: kovabor-tracktor
 name: Tracktor
 tagline: Mileage and vehicle expense tracking
+icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/main/kovabor-tracktor/logo.svg
 category: automation
 version: "1.0.0"
 port: 3339
