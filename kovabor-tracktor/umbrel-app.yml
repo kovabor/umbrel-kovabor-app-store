@@ -1,9 +1,9 @@
 manifestVersion: 1
-id: mystore-tracktor
+id: kovabor-tracktor
 name: Tracktor
-tagline: Web-based mileage and vehicle expense tracking
+tagline: Mileage and vehicle expense tracking
 category: automation
-version: "latest"
+version: "1.0.0"
 port: 3339
 description: >-
   Tracktor is a self-hosted web application for tracking mileage, fuel consumption, 
@@ -12,6 +12,8 @@ developer: Tracktor
 website: https://github.com/samuel-ping/tracktor
 repo: https://github.com/samuel-ping/tracktor
 support: https://github.com/samuel-ping/tracktor/issues
+submitter: kovabor
+submissionDate: "2026-10-21"
 gallery: []
 path: ""
 defaultUsername: ""
