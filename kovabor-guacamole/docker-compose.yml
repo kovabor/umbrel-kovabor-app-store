@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: kovabor-guacamole_web_1
+      APP_PORT: 8080
+
+  web:
+    image: jwetzell/guacamole:latest
+    container_name: kovabor-guacamole_web_1
+    restart: always
+    entrypoint: "/init"
+    ports:
+      - "8348:8080"
+    volumes:
+      - ${APP_DATA_DIR}/config:/config
+    environment:
+      - PUID=1026
+      - PGID=100
+      - TZ=Europe/Budapest
+      - LANG=en_US.UTF-8
+      - LANGUAGE=en_US:en
+      - LC_ALL=en_US.UTF-8
+      - GUACAMOLE_HOME=/config/guacamole
+      - POSTGRES_USER=guacamole
+      - POSTGRES_DB=guacamole_db
+      - EXTENSIONS=auth-totp
