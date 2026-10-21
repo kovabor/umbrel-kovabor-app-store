@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   app_proxy:
-    image: umbreldev/app-proxy:v1.0.0
+    image: getumbrel/app-proxy:v1.1.1
     container_name: kovabor-crafty-controller_app_proxy_1
     environment:
       APP_HOST: kovabor-crafty-controller_web_1
