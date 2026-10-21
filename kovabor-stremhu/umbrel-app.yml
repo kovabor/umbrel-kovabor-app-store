@@ -1,0 +1,21 @@
+manifestVersion: 1
+id: kovabor-stremhu-source
+name: StremHU Source
+tagline: Self-hosted torrent streaming szerver nCore-hoz és más magyar oldalakhoz
+category: Entertainment
+version: "0.23.4"
+port: 3100
+description: >-
+  Self-hosted torrent streaming szerver Stremio, Nuvio, és Kodi kliensekhez, 
+  beépített támogatással a magyar torrentoldalakhoz (nCore, BitHUmen, iNSANE, Majomparádé).
+developer: s4pp1
+website: https://github.com/s4pp1/stremhu-source
+repo: https://github.com/s4pp1/stremhu-source
+support: https://github.com/s4pp1/stremhu-source/issues
+submitter: kovabor
+submissionDate: "2026-10-21"
+icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-stremhu-source/logo.webp
+gallery: []
+path: ""
+defaultUsername: ""
+deterministicPassword: false

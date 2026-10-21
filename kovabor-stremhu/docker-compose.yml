@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: kovabor-stremhu-source_web_1
+      APP_PORT: 3100
+
+  web:
+    image: s4pp1/stremhu-source:latest
+    container_name: kovabor-stremhu-source_web_1
+    restart: unless-stopped
+    command: "python -m app.run"
+    working_dir: "/app"
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/data
+      - /mnt/nfs/video/stremio:/app/data/downloads
+    environment:
+      - TZ=Europe/Budapest
+      - PORT=3100
+      - NODE_ENV=prod
