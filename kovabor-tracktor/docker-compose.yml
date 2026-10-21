@@ -2,13 +2,16 @@ version: "3.7"
 
 services:
   app_proxy:
+    image: getumbrel/app-proxy:v0.1.2
+    ports:
+      - 3339:80
     environment:
       APP_HOST: kovabor-tracktor_web_1
-      APP_PORT: 3339
+      APP_PORT: 3000
+    restart: on-failure
 
   web:
     image: ghcr.io/javedh-dev/tracktor:latest
-    container_name: kovabor-tracktor_web_1
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/data:/data
@@ -24,9 +27,3 @@ services:
       - LOG_DIR=/data/logs
       - BODY_SIZE_LIMIT=Infinity
       - RUNTIME=docker
-    healthcheck:
-      test: ["CMD-SHELL", "nc -z 127.0.0.1 3000 || exit 1"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-      start_period: 90s
