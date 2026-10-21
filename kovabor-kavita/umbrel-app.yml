@@ -3,8 +3,8 @@ id: kovabor-kavita
 name: Kavita
 tagline: Fast, feature-rich, cross-platform reading server
 icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-kavita/kavita.png
-category: entertainment
-version: "v0.9.0"
+category: Entertainment
+version: "0.9.0"
 port: 8420
 description: >-
   Kavita is a fast, feature-rich, cross-platform reading server built as a full solution 
