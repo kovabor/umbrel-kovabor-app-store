@@ -2,7 +2,7 @@ manifestVersion: 1
 id: kovabor-mcsmanager
 name: MCSManager
 tagline: Könnyűsúlyú játékszerver-kezelő panel gyerekeknek
-icon: https://raw.githubusercontent.com/MCSManager/MCSManager/master/logo.png
+icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-mcsmanager/logo.png
 category: games
 version: "10.0.0"
 port: 23333
