@@ -2,6 +2,7 @@ manifestVersion: 1
 id: kovabor-guacamole
 name: Guacamole
 tagline: Clientless remote desktop gateway
+icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/main/kovabor-guacamole/icon.png
 category: productivity
 version: "1.6.0"
 port: 8348
