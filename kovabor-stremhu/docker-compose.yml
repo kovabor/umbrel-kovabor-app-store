@@ -14,6 +14,7 @@ services:
       - TZ=Europe/Budapest
       - PORT=7070
       - NODE_ENV=prod
+      - HOST_IP=192.168.0.2
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
     mem_limit: 2g
