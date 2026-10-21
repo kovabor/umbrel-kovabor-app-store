@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: kovabor-kavita
+name: Kavita
+tagline: Fast, feature-rich, cross-platform reading server
+icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/main/kovabor-kavita/icon.png
+category: entertainment
+version: "v0.9.0"
+port: 8420
+description: >-
+  Kavita is a fast, feature-rich, cross-platform reading server built as a full solution 
+  for all your reading needs. Setup your own server and share your manga, comic, and book collection.
+developer: LinuxServer.io
+website: https://github.com/Kareadita/Kavita
+repo: https://github.com/linuxserver/docker-kavita
+support: https://github.com/linuxserver/docker-kavita/issues
+submitter: kovabor
+submissionDate: "2026-10-21"
+icon: https://azukaar.github.io/cosmos-servapps-official/servapps/Kavita/icon.png
+gallery: []
+path: ""
+defaultUsername: ""
+deterministicPassword: false
