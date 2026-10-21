@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: kovabor-tracktor
+name: Tracktor
+tagline: Track your projects and tasks
+icon: https://svgur.com/i/mvA.svg
+category: Productivity
+version: "1.0.0"
+port: 3000
+description: >-
+  Tracktor project and task tracking application.
+
+developer: javedh-dev
+website: https://github.com/javedh-dev/tracktor
+submitter: kovabor
+submission: https://github.com/javedh-dev/tracktor
+repo: https://github.com/javedh-dev/tracktor
+support: https://github.com/javedh-dev/tracktor/issues
+gallery: []
+releaseNotes: >-
+  Initial community app release.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
