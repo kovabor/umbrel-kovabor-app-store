@@ -3,22 +3,29 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: kovabor-crafty-controller_web_1
-      APP_PORT: 8443
+      APP_HOST: kovabor-crafty-controller_proxy_1
+      APP_PORT: 8080
+
+  proxy:
+    image: caddy:2
+    container_name: kovabor-crafty-controller_proxy_1
+    restart: unless-stopped
+    command: caddy reverse-proxy --from :8080 --to https://kovabor-crafty-controller_web_1:8443 --insecure
+    depends_on:
+      - web
 
   web:
     image: registry.gitlab.com/crafty-controller/crafty-4:latest
     container_name: kovabor-crafty-controller_web_1
-    restart: always
+    restart: unless-stopped
     environment:
       - TZ=Europe/Budapest
     volumes:
+      - ${APP_DATA_DIR}/data/servers:/crafty/servers
       - ${APP_DATA_DIR}/data/backups:/crafty/backups
       - ${APP_DATA_DIR}/data/logs:/crafty/logs
-      - ${APP_DATA_DIR}/data/servers:/crafty/servers
       - ${APP_DATA_DIR}/data/config:/crafty/app/config
       - ${APP_DATA_DIR}/data/import:/crafty/import
-      - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "8123:8123"
       - "19132:19132/udp"
