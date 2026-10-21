@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: crafty-controller_web_1
+      APP_PORT: 8443
+
+  web:
+    image: arcane/crafty-4:latest
+    container_name: crafty-controller_web_1
+    restart: on-failure
+    environment:
+      - TZ=Europe/Budapest
+    volumes:
+      - ${APP_DATA_DIR}/data/servers:/crafty/app/servers
+      - ${APP_DATA_DIR}/data/backups:/crafty/app/backups
+      - ${APP_DATA_DIR}/data/import:/crafty/app/import
+    ports:
+      - "25565-25595:25565-25595"

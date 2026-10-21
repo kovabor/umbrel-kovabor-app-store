@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: crafty-controller
+name: Crafty Controller
+tagline: Minecraft szerverkezelő felület gyerekeknek és családoknak
+icon: https://raw.githubusercontent.com/arcanetech/crafty-web/master/public/img/crafty_logo.png
+category: Games
+version: 4.4.4
+port: 8443
+description: >-
+  A Crafty Controller egy modern, webes felületű Minecraft szervermenedzsment eszköz.
+  Lehetővé teszi különféle Minecraft szerverek (Vanilla, Paper, Fabric, Forge) 1-kattintásos 
+  létrehozását, mentések kezelését és egyedi jogosultságok megadását a család tagjainak.
+developer: Arcane Technologies
+website: https://craftycontrol.com/
+submitter: User
+submissionDate: '2026-10-21'
+repo: https://gitlab.com/crafty-controller/crafty-4
+support: https://discord.gg/98my2Ew
+gallery:
+  - https://craftycontrol.com/assets/img/slider/dashboard.png
+path: ''
+defaultPassword: ''
