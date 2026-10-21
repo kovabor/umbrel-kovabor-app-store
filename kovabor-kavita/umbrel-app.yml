@@ -2,8 +2,7 @@ manifestVersion: 1
 id: kovabor-kavita
 name: Kavita
 tagline: Fast, feature-rich, cross-platform reading server
-icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-kavita/kavita.png
-category: Entertainment
+category: Utilities
 version: "0.9.0"
 port: 8420
 description: >-
@@ -15,7 +14,7 @@ repo: https://github.com/linuxserver/docker-kavita
 support: https://github.com/linuxserver/docker-kavita/issues
 submitter: kovabor
 submissionDate: "2026-10-21"
-icon: https://azukaar.github.io/cosmos-servapps-official/servapps/Kavita/icon.png
+icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-kavita/kavita.png
 gallery: []
 path: ""
 defaultUsername: ""
