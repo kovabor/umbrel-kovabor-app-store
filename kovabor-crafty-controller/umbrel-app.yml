@@ -1,22 +1,21 @@
 manifestVersion: 1
-id: crafty-controller
+id: kovabor-crafty-controller
 name: Crafty Controller
-tagline: Minecraft szerverkezelő felület gyerekeknek és családoknak
+tagline: Minecraft szerverkezelő felület gyerekeknek
 icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/1d7afe17024d1a71eba38d3fcf1c96658ce03935/kovabor-crafty-controller/crafty-controller.svg
-category: Games
-version: 4.4.4
+category: games
+version: "4.4.4"
 port: 8443
 description: >-
-  A Crafty Controller egy modern, webes felületű Minecraft szervermenedzsment eszköz.
-  Lehetővé teszi különféle Minecraft szerverek (Vanilla, Paper, Fabric, Forge) 1-kattintásos 
-  létrehozását, mentések kezelését és egyedi jogosultságok megadását a család tagjainak.
+  A Crafty Controller egy webes felületű Minecraft szervermenedzsment eszköz.
+  Lehetővé teszi különféle Minecraft szerverek (Vanilla, Paper, Fabric, Forge)
+  egyszerű létrehozását és kezelését külön jogosultságokkal a gyerekeknek.
 developer: Arcane Technologies
 website: https://craftycontrol.com/
-submitter: User
-submissionDate: '2026-10-21'
+submitter: kovabor
+submissionDate: "2026-10-21"
 repo: https://gitlab.com/crafty-controller/crafty-4
 support: https://discord.gg/98my2Ew
-gallery:
-  - https://craftycontrol.com/assets/img/slider/dashboard.png
-path: ''
-defaultPassword: ''
+gallery: []
+defaultPassword: ""
+path: ""
