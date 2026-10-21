@@ -14,7 +14,6 @@ services:
     working_dir: "/app"
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
-      - /mnt/nfs/video/stremio:/app/data/downloads
     environment:
       - TZ=Europe/Budapest
       - PORT=3100
