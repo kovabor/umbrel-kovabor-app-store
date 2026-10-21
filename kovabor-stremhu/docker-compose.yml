@@ -1,18 +1,15 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: kovabor-stremhu_web_1
-      APP_PORT: 3100
-
   web:
     image: s4pp1/stremhu-source:latest
     container_name: kovabor-stremhu_web_1
     restart: unless-stopped
+    ports:
+      - "7070:7070"
     environment:
       - TZ=Europe/Budapest
-      - PORT=3100
+      - PORT=7070
       - NODE_ENV=prod
       - HOST_IP=192.168.0.2
     volumes:
