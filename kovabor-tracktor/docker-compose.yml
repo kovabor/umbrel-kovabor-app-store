@@ -2,13 +2,9 @@ version: "3.7"
 
 services:
   app_proxy:
-    image: getumbrel/app-proxy:v0.1.2
-    ports:
-      - 3339:80
     environment:
       APP_HOST: kovabor-tracktor_web_1
       APP_PORT: 3000
-    restart: on-failure
 
   web:
     image: ghcr.io/javedh-dev/tracktor:latest
