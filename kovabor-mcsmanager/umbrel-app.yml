@@ -1,0 +1,21 @@
+manifestVersion: 1
+id: kovabor-mcsmanager
+name: MCSManager
+tagline: Könnyűsúlyú játékszerver-kezelő panel gyerekeknek
+icon: https://raw.githubusercontent.com/MCSManager/MCSManager/master/logo.png
+category: games
+version: "10.0.0"
+port: 23333
+description: >-
+  Az MCSManager egy modern, webes felületű játékszerver-menedzsment rendszer.
+  Lehetővé teszi Minecraft szerverek egyszerű létrehozását, indítását és 
+  kezelését, miközben biztonságos hozzáférést biztosít a családtagoknak.
+developer: MCSManager
+website: https://mcsmanager.com/
+submitter: kovabor
+submissionDate: "2026-10-21"
+repo: https://github.com/MCSManager/MCSManager
+support: https://github.com/MCSManager/MCSManager/issues
+gallery: []
+defaultPassword: ""
+path: ""
