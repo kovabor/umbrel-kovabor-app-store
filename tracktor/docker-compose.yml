@@ -1,19 +1,27 @@
+version: "3.7"
+
 services:
-  tracktor:
+  app_proxy:
+    environment:
+      APP_HOST: kovabor-tracktor_server_1
+      APP_PORT: 3000
+
+  server:
     image: ghcr.io/javedh-dev/tracktor:latest
-    container_name: tracktor
-    restart: unless-stopped
-    ports:
-      - '3339:3000'
+    init: true
+    restart: on-failure
     environment:
       NODE_ENV: production
-      HOST: '0.0.0.0'
-      PORT: '3000'
+      HOST: "0.0.0.0"
+      PORT: "3000"
       DB_PATH: /data/tracktor.db
       UPLOADS_DIR: /uploads
       LOG_DIR: /data/logs
-      TRACKTOR_DEMO_MODE: 'false'
-      FORCE_DATA_SEED: 'false'
+      TRACKTOR_DEMO_MODE: "false"
+      FORCE_DATA_SEED: "false"
+      BODY_SIZE_LIMIT: "Infinity"
+      RUNTIME: docker
+      LOG_LEVEL: info
     volumes:
-      - ./data:/data
-      - ./uploads:/uploads
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_DATA_DIR}/uploads:/uploads
