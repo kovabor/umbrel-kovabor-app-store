@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   app_proxy:
-    image: getumbrel/app-proxy:v1.1.1
+    image: getumbrel/app-proxy:latest
     container_name: kovabor-crafty-controller_app_proxy_1
     environment:
       APP_HOST: kovabor-crafty-controller_web_1
@@ -24,6 +24,6 @@ services:
       - ${APP_DATA_DIR}/data/config:/crafty/app/config
       - ${APP_DATA_DIR}/data/import:/crafty/import
     ports:
-      - "8123:8123" # DYNMAP
-      - "19132:19132/udp" # BEDROCK
-      - "25500-25600:25500-25600" # MC SERV PORT RANGE
+      - "8123:8123"
+      - "19132:19132/udp"
+      - "25500-25600:25500-25600"
