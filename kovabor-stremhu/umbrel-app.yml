@@ -2,7 +2,7 @@ manifestVersion: 1
 id: kovabor-stremhu
 name: StremHU
 tagline: Self-hosted torrent streaming szerver
-category: Entertainment
+category: media
 version: "0.23.4"
 port: 7070
 description: >-
