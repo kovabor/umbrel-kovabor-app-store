@@ -1,18 +1,13 @@
-version: "3.7"
-
 services:
-app_proxy:
-environment:
-APP_HOST: stremio-m3u-addon_web_1
-APP_PORT: 7000
-
-web:
-image: inside4ndroid/stremio-m3u-epg-addon:latest
-container_name: stremio-m3u-addon_web_1
-restart: unless-stopped
-environment:
-- TZ=Europe/Budapest
-- PORT=7000
-volumes:
-- ${APP_DATA_DIR}/data/config:/config
-- ${APP_DATA_DIR}/data/data:/data
+  app:
+    container_name: kovabor-stremio-m3u-addon_app_1
+    image: inside4ndroid/stremio-m3u-epg-addon:latest
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Budapest
+      - PORT=7000
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${APP_DATA_DIR}/data/data:/data
+    ports:
+      - ${APP_PORT}:7000
