@@ -5,7 +5,7 @@ storage:
 category: media
 name: Dispatcharr
 tagline: Manage IPTV playlists
-icon: 
+icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-dispatcharr/icon.png
 version: "0.32.0"
 port: 9191
 description:
