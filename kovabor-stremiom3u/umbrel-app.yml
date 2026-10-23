@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: kovabor-stremio-m3u-addon
+id: kovabor-stremiom3u
 name: Stremio M3U & EPG Addon
 tagline: M3U lejátszási listák és EPG kiegészítő Stremio-hoz
 icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-stremiom3u/logo-by-gemini.jpg
