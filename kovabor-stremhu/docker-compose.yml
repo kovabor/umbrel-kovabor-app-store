@@ -3,17 +3,23 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: kovabor-stremhu_web_1
+      APP_HOST: kovabor-stremhu_server_1
       APP_PORT: 7070
       PROXY_AUTH_ADD: "false"
 
-  web:
+  server:
     image: s4pp1/stremhu-source:latest
-    container_name: kovabor-stremio-m3u-addon_web_1 # vagy kovabor-stremhu_web_1
+    container_name: kovabor-stremhu_server_1
     restart: unless-stopped
+    network_mode: bridge
     environment:
       - TZ=Europe/Budapest
       - PORT=7070
       - NODE_ENV=prod
+      - HOST_IP=192.168.0.2
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
+
+volumes:
+  data:
+    name: stremhu-source-data
