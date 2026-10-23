@@ -16,7 +16,7 @@ submissionDate: "2026-10-23"
 repo: https://github.com/inside4ndroid/stremio-m3u-epg-addon
 support: https://github.com/inside4ndroid/stremio-m3u-epg-addon/issues
 releaseNotes: >-
-  Első kiadás: M3U és EPG támogatás Stremio-hoz.
+  Első hivatalos Umbrel integráció M3U és EPG támogatással.
 license: MIT
 gallery:
   - https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-stremiom3u/logo-by-gemini.jpg
