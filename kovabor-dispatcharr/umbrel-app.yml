@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: kovabor-dispatcharr
+storage:
+  dataRoot: data
+category: media
+name: Dispatcharr
+tagline: Manage IPTV playlists
+icon: 
+version: "0.32.0"
+port: 9191
+description:
+developer: Dispatcharr
+website: https://github.com/Dispatcharr/Dispatcharr
+submitter: kovabor
+submission: https://github.com/Dispatcharr/Dispatcharr
+repo: https://github.com/Dispatcharr/Dispatcharr
+support: https://github.com/Dispatcharr/Dispatcharr/issues
+releaseNotes:
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

@@ -1,0 +1,19 @@
+manifestVersion: 1
+id: stremio-m3u-addon
+name: Stremio M3U & EPG Addon
+tagline: M3U lejátszási listák és EPG kiegészítő Stremio-hoz
+icon: https://raw.githubusercontent.com/inside4ndroid/stremio-m3u-epg-addon/main/public/favicon.ico
+category: media
+version: 1.0.0
+port: 7000
+description: >-
+Egy Stremio kiegészítő (Addon), amely lehetővé teszi saját M3U/M3U8 IPTV csatornalisták és EPG (műsorújság) források használatát közvetlenül a Stremio alkalmazásban.
+developer: inside4ndroid
+website: https://github.com/inside4ndroid/stremio-m3u-epg-addon
+submitter: Community
+submissionDate: 2026-10-23
+repo: https://github.com/inside4ndroid/stremio-m3u-epg-addon
+support: https://github.com/inside4ndroid/stremio-m3u-epg-addon/issues
+gallery: []
+defaultAppPort: 7000
+path: ""
