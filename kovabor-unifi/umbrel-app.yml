@@ -1,0 +1,72 @@
+
+manifestVersion: 1
+id: kovabor-unifi
+name: UniFi Hálózatkezelő
+tagline: UniFi hálózati eszközök központi kezelése
+icon:
+category: networking
+version: "9.0.114"
+port: 8892
+
+description: >-
+  A UniFi Network Server a Ubiquiti központi hálózatkezelő platformja,
+  amely lehetővé teszi a UniFi routerek, switchek és hozzáférési pontok
+  egyszerű konfigurálását, felügyeletét és karbantartását.
+
+  Az alkalmazás segítségével egyetlen felületen kezelheted a hálózati
+  eszközeidet, konfigurálhatod a vezeték nélküli hálózatokat, VLAN-okat,
+  biztonsági beállításokat, VPN-kapcsolatokat, valamint nyomon követheted
+  a hálózat forgalmát és az eszközök állapotát.
+
+  Az UniFi Network Server lehetőséget biztosít a csatlakoztatott eszközök
+  központi firmware-frissítésére, a hálózati statisztikák megtekintésére
+  és a hálózati problémák felderítésére.
+
+  Adatbázis-követelmény:
+  Az alkalmazás MongoDB 4.4 adatbázist használ. A Docker Compose
+  konfigurációban a MongoDB verziója rögzített, nem használható
+  helyette automatikusan frissülő latest címke.
+
+  Szükséges hálózati portok:
+
+  - 8893/TCP: HTTPS webes kezelőfelület.
+  - 3478/UDP: STUN, az eszközök kapcsolódásához.
+  - 10001/UDP: UniFi eszközök helyi hálózati felderítése.
+  - 8080/TCP: Kommunikáció a vezérlő és az eszközök között.
+  - 1900/UDP: Helyi hálózati felderítés (L2), opcionális.
+  - 8843/TCP: Vendégportál HTTPS.
+  - 8880/TCP: Vendégportál HTTP.
+  - 6789/TCP: Sebességteszt a mobilalkalmazásból.
+  - 5514/UDP: Távoli syslog üzenetek fogadása.
+  - 8892/TCP: HTTP átirányítás a vendégportálhoz.
+
+  Fontos:
+  A webes kezelőfelület kizárólag HTTPS-kapcsolaton keresztül érhető el.
+  A böngészőben a HTTPS protokollt kell használni. Fordított proxy vagy
+  Cloudflare Tunnel esetén a forgalmat a 8893-as HTTPS portra kell
+  továbbítani.
+
+developer: Ubiquiti Inc.
+website: https://ui.com/eu/en
+submitter: kovabor
+submission: https://github.com/kovabor/umbrel-kovabor-app-store
+repo: https://github.com/linuxserver/docker-unifi-network-application
+support: https://github.com/linuxserver/docker-unifi-network-application/issues
+
+gallery:
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-unifi/1.jpg
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-unifi/2.jpg
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-unifi/3.jpg
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-unifi/4.jpg
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-unifi/5.jpg
+
+releaseNotes: >-
+  UniFi Network Server 9.0.114.
+  A kiadás a Java futtatókörnyezet 17-es verziójára áll vissza,
+  valamint kompatibilitási és teljesítménybeli javításokat tartalmaz.
+  Az alkalmazás MongoDB 4.4 adatbázist használ.
+
+dependencies:
+path: "https://umbrel.local:8893"
+defaultUsername: ""
+defaultPassword: ""
