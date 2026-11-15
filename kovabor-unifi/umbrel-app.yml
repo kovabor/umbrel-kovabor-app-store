@@ -3,7 +3,7 @@ manifestVersion: 1
 id: kovabor-unifi
 name: UniFi Hálózatkezelő
 tagline: UniFi hálózati eszközök központi kezelése
-icon:
+icon: https://github.com/kovabor/umbrel-kovabor-app-store/blob/master/kovabor-unifi/logo.png
 category: networking
 version: "9.0.114"
 port: 8892
