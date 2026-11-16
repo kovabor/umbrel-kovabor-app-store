@@ -12,7 +12,7 @@ services:
     restart: always
     entrypoint: "/init"
     ports:
-      - "8349:8080"
+      - "8493:8080"
     volumes:
       - ${APP_DATA_DIR}/config:/config
     environment:
