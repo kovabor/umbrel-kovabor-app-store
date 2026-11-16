@@ -5,7 +5,7 @@ tagline: Clientless remote desktop gateway
 icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-guacamole/icon.png
 category: productivity
 version: "1.6.0"
-port: 8349
+port: 8493
 description: >-
   Apache Guacamole is a clientless remote desktop gateway supporting protocols 
   like VNC, RDP, and SSH, running entirely inside your web browser.
