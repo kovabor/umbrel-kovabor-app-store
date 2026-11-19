@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: kovabor-MagyarStreamingPro
+name: Magyar Streaming Pro
+category: Media
+version: "latest"
+tagline: Magyar nyelvű HTTP stream forrás Nuvio és Stremio kompatibilis kliensekhez
+description: >-
+  Magyar tartalmakat kiszolgáló HTTP addon/forrás szolgáltatás (nuvio-magyar-http).
+  Otthoni szerveren futtatva a NETMOZI_REMOTE értékét érdemes kikapcsolva
+  (0 vagy üresen) hagyni a VOE 1080p streamelési sajátosságai miatt.
+developer: player798xy
+website: https://github.com/player798xy
+submitter: kovabor
+submission: https://github.com/kovabor/umbrel-kovabor-app-store
+repo: https://ghcr.io/player798xy/nuvio-magyar-http
+support: https://github.com/player798xy
+port: 7000
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+permissions: []
