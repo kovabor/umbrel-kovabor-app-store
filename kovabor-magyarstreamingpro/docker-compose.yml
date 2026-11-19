@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: kovabor-magyarstreamingpro_server_1
+      APP_PORT: 9000
+
+  server:
+    image: ghcr.io/player798xy/nuvio-magyar-http:latest
+    container_name: kovabor-magyarstreamingpro_server_1
+    restart: on-failure
+    environment:
+      NODE_ENV: production
+      PORT: "9000"
+      # Otthoni hálózaton / Umbrel alatt hagyd kikapcsolva (ne állítsd "1"-re) a VOE 1080p miatt:
+      # NETMOZI_REMOTE: "1"
+      # Opcionális védett /api/stats végponthoz:
+      # STATS_KEY: ""
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
