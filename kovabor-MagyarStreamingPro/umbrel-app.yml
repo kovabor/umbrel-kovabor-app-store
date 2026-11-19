@@ -15,7 +15,7 @@ submitter: kovabor
 submission: https://github.com/kovabor/umbrel-kovabor-app-store
 repo: https://ghcr.io/player798xy/nuvio-magyar-http
 support: https://github.com/player798xy
-port: 7000
+port: 9160
 gallery: []
 path: ""
 defaultUsername: ""
