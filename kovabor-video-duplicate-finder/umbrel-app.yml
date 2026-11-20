@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: kovabor-video-duplicate-finder
 name: Video Duplicate Finder
-icon: 
+icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/refs/heads/master/kovabor-video-duplicate-finder/logo.png
 category: Media
 version: "latest"
 tagline: Duplikált és hasonló videófájlok keresése böngészős felületen
