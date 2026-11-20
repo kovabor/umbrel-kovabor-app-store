@@ -1,0 +1,21 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: kovabor-video-duplicate-finder_server_1
+      APP_PORT: 5800
+
+  server:
+    image: jlesage/video-duplicate-finder:latest
+    container_name: kovabor-video-duplicate-finder_server_1
+    restart: on-failure
+    environment:
+      # Állítsd be a host felhasználód és csoportod azonosítóját, ha jogosultsági hibát kapsz:
+      # USER_ID: "1000"
+      # GROUP_ID: "1000"
+      TZ: "Europe/Budapest"
+      # Opcionális: ha csak böngészni/keresni akarsz és nem törölni/mozgatni, :ro-ra is vehető lent
+      # DARK_MODE: "1"
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config:rw
+      # Cseréld le a saját videómappád elérési útjára (pl. /mnt/media/videos vagy NFS/SMB mount pontra):
+      - /path/to/your/videos:/storage:rw

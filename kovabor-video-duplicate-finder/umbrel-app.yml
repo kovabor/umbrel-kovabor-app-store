@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: kovabor-video-duplicate-finder
+name: Video Duplicate Finder
+icon: 
+category: Media
+version: "latest"
+tagline: Duplikált és hasonló videófájlok keresése böngészős felületen
+description: >-
+  Grafikus (böngészőn keresztül elérhető) eszköz videógyűjteményekben lévő
+  duplikált és vizuálisan hasonló videófájlok felkutatására és rendszerezésére.
+  A vizsgálandó videókönyvtárakat a /storage pontra csatold fel.
+developer: jlesage
+website: https://github.com/jlesage/docker-video-duplicate-finder
+submitter: kovabor
+submission: https://github.com/kovabor/umbrel-kovabor-app-store
+repo: https://hub.docker.com/r/jlesage/video-duplicate-finder
+support: https://github.com/jlesage/docker-video-duplicate-finder/issues
+port: 9165
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+permissions: []
