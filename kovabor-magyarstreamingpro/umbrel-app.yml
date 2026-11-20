@@ -2,7 +2,7 @@ manifestVersion: 1
 id: kovabor-magyarstreamingpro
 name: Magyar Streaming Pro
 icon: https://raw.githubusercontent.com/kovabor/umbrel-kovabor-app-store/495c29dded4f2c8431a64e308b1aba8245c9ec6c/kovabor-magyarstreamingpro/logo.svg
-category: Media
+category: media
 version: "latest"
 tagline: Magyar nyelvű HTTP stream forrás Nuvio és Stremio kompatibilis kliensekhez
 description: >-
